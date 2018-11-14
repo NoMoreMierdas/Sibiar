@@ -13,6 +13,8 @@
 		4EAE2BCC219B0FC400B51F44 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE2BCA219B0FC400B51F44 /* MainMenu.xib */; };
 		4EAE2BD8219B0FC400B51F44 /* SibiarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE2BD7219B0FC400B51F44 /* SibiarTests.swift */; };
 		4EAE2BE3219B0FC400B51F44 /* SibiarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE2BE2219B0FC400B51F44 /* SibiarUITests.swift */; };
+		4EAE2BFB219C171000B51F44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE2BF9219C171000B51F44 /* MainViewController.swift */; };
+		4EAE2BFC219C171000B51F44 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE2BFA219C171000B51F44 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		4EAE2BDE219B0FC400B51F44 /* SibiarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SibiarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE2BE2219B0FC400B51F44 /* SibiarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SibiarUITests.swift; sourceTree = "<group>"; };
 		4EAE2BE4219B0FC400B51F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EAE2BF9219C171000B51F44 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4EAE2BFA219C171000B51F44 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		4EAE2BC2219B0FC300B51F44 /* Sibiar */ = {
 			isa = PBXGroup;
 			children = (
+				4EAE2BFD219C1B0600B51F44 /* Helpers */,
+				4EAE2BF8219C16F300B51F44 /* ViewViewModel */,
 				4EAE2BC3219B0FC300B51F44 /* AppDelegate.swift */,
 				4EAE2BC8219B0FC400B51F44 /* Assets.xcassets */,
 				4EAE2BCA219B0FC400B51F44 /* MainMenu.xib */,
@@ -122,6 +128,30 @@
 				4EAE2BE4219B0FC400B51F44 /* Info.plist */,
 			);
 			path = SibiarUITests;
+			sourceTree = "<group>";
+		};
+		4EAE2BF8219C16F300B51F44 /* ViewViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE2BF9219C171000B51F44 /* MainViewController.swift */,
+				4EAE2BFA219C171000B51F44 /* MainViewController.xib */,
+			);
+			path = ViewViewModel;
+			sourceTree = "<group>";
+		};
+		4EAE2BFD219C1B0600B51F44 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4EAE2BFE219C1B1D00B51F44 /* FileManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4EAE2BFE219C1B1D00B51F44 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EAE2BC9219B0FC400B51F44 /* Assets.xcassets in Resources */,
+				4EAE2BFC219C171000B51F44 /* MainViewController.xib in Resources */,
 				4EAE2BCC219B0FC400B51F44 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EAE2BFB219C171000B51F44 /* MainViewController.swift in Sources */,
 				4EAE2BC4219B0FC300B51F44 /* AppDelegate.swift in Sources */,
 				4EAE2BC7219B0FC300B51F44 /* Sibiar.xcdatamodeld in Sources */,
 			);
